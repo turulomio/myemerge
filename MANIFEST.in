@@ -1,0 +1,7 @@
+include LICENSE.txt *.py
+recursive-include locale *.po 
+recursive-include myemerge *.mo *.py
+recursive-include man *.1
+recursive-include doc ttyrec/*.gif *.py Doxyfile index.dox myemerge.png myemerge.svg
+prune __pycache__
+global-exclude *.pyc

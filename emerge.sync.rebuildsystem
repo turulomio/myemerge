@@ -1,7 +1,0 @@
-#!/bin/bash
-#cpupower frequency-set -u 3000000
-emaint cleanresume -f
-emerge -ev world --keep-going y
-emerge @preserved-rebuild
-revdep-rebuild -i -- --keep-going y
-#cpupower frequency-set -u 3800000

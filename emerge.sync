@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "MY EMERGE.SYNC"
-emerge --sync
-emaint cleanresume -f
-emerge --update --newuse --deep -v --keep-going y @world --backtrack=60 --with-bdeps y --changed-deps y
-emerge -v  @preserved-rebuild --keep-going y
-eclean-dist -d
