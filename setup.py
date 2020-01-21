@@ -27,6 +27,7 @@ class Procedure(Command):
         print("  * python setup.py install")
         print("  * git commit -a -m 'myemerge-{}'".format(__version__))
         print("  * git push")
+        print("  * python setup.py uninstall")
         print(_("  * Make a new tag in github"))
         print(_("  * Create a new gentoo ebuild with the new version"))
         print(_("  * Upload to portage repository")) 
