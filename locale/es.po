@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-12 20:56+0100\n"
+"POT-Creation-Date: 2020-02-06 18:31+0100\n"
 "PO-Revision-Date: 2018-10-22 18:51+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -38,3 +38,12 @@ msgstr "  * Subelo al repositorio del portage"
 
 msgid "Uninstall command only works in Linux"
 msgstr "El comando 'uninstall' solo funciona en Linux"
+
+msgid "My method to update my Gentoo System"
+msgstr "Mi método para actualizar mi sistema Gentoo"
+
+msgid "Write a config file in /etc/myemerge/myemerge.ini"
+msgstr ""
+
+msgid "Rebuild the whole Gentoo system"
+msgstr "Recompila el sistema Gentoo completo"

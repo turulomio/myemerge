@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-12 20:56+0100\n"
+"POT-Creation-Date: 2020-02-06 18:31+0100\n"
 "PO-Revision-Date: 2018-11-03 07:11+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -37,6 +37,15 @@ msgstr " * Uploader au dépôt de portage"
 
 msgid "Uninstall command only works in Linux"
 msgstr "La commande 'désinstaller' marche seulement sur Linux"
+
+msgid "My method to update my Gentoo System"
+msgstr ""
+
+msgid "Write a config file in /etc/myemerge/myemerge.ini"
+msgstr ""
+
+msgid "Rebuild the whole Gentoo system"
+msgstr ""
 
 #~ msgid "If changed restart from first python setup.py doc"
 #~ msgstr "S'il y a eu modification, recommencer depuis le premier document python setup.py"

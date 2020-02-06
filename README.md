@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0
+- Fixed bug when cpufreq isn't configured in kernel.
+- Executable renamed to myemerge.
+- Created --rebuild parameter to rebuild the whole Gentoo system.
+
 ## 0.3.0
 - You can set your compile CPU frequency in Hz. Max CPU capacity by default.
 

@@ -1,5 +1,4 @@
 from setuptools import setup, Command
-import datetime
 import gettext
 import os
 import platform
@@ -96,7 +95,7 @@ with open('myemerge/version.py', encoding='utf-8') as f:
 
 setup(name='myemerge',
     version=__version__,
-    description='Change files and directories permisions and owner recursivily from current directory',
+    description='My method to update my Gentoo System',
     long_description="Project web page is in https://github.com/turulomio/myemerge",
     long_description_content_type='text/markdown',
     classifiers=['Development Status :: 4 - Beta',
@@ -112,11 +111,10 @@ setup(name='myemerge',
     license='GPL-3',
     packages=['myemerge'],
     entry_points = {'console_scripts': [
-                                        'myemerge_sync=myemerge.myemerge_sync:main',
-                                        'myemerge_sync_rebuildsystem=myemerge.myemerge_sync_rebuildsystem:main',
+                                        'myemerge=myemerge.myemerge_sync:main',
                                        ],
                    },
-    install_requires=['colorama','setuptools'],
+    install_requires=['setuptools'],
     cmdclass={
                'doc': Doc,
                'uninstall': Uninstall,

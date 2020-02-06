@@ -1,4 +1,4 @@
 import datetime
 
-__versiondate__ = datetime.date(2020, 1, 21)
-__version__ = '0.3.0'
+__versiondate__ = datetime.date(2020, 2, 6)
+__version__ = '0.4.0'
