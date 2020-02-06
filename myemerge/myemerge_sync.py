@@ -16,7 +16,7 @@ def main():
      
     if args.config==True: #Writes a config file
         config.save()
-        print("You must set your settings in /etc/mykernel/mykernel.ini. Use man mykernel for help.")
+        print("You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help.")
         exit(0)
     
     if is_cpufreq_configured():
@@ -26,7 +26,7 @@ def main():
         
     if args.config==True: #Writes a config file
         config.save()
-        print("You must set your settings in /etc/mykernel/mykernel.ini. Use man mykernel for help.")
+        print("You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help.")
         exit(0)
 
     if args.rebuild==True:
