@@ -4,16 +4,26 @@ from myemerge.objects.command import command
 from myemerge.myconfigparser import MyConfigParser
 from myemerge.cpupower import sys_set_cpu_max_scaling_freq, sys_get_cpu_max_scaling_freq, sys_get_cpu_max_freq, is_cpufreq_configured
 from myemerge.version import __version__, __versiondate__
-
+from os import environ, system
+from sys import exit
 
 def main():
     parser=ArgumentParser(description=_("My method to update my Gentoo System"))
     parser.add_argument('--version', action='version', version="{} ({})".format(__version__, __versiondate__))
     parser.add_argument('--config', help=_("Write a config file in /etc/myemerge/myemerge.ini"),  action='store_true',  default=False)
     parser.add_argument('--rebuild', help=_("Rebuild the whole Gentoo system"),  action='store_true',  default=False)
+    parser.add_argument('--ccache_stats', help=_("Shows ccache statistics"),  action='store_true',  default=False)
+
     args=parser.parse_args()
     config=MyConfigParser('/etc/myemerge/myemerge.ini')
-     
+
+    if args.ccache_stats==True:
+        environ["CCACHE_DIR"]="/var/cache/ccache" #CCache path of portage
+        if args.ccache_stats==True:
+            system("ccache -s")
+            exit(0)
+
+
     if args.config==True: #Writes a config file
         config.save()
         print("You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help.")
