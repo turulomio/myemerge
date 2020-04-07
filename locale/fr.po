@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-06 18:31+0100\n"
+"POT-Creation-Date: 2020-04-07 21:32+0200\n"
 "PO-Revision-Date: 2018-11-03 07:11+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -45,6 +45,9 @@ msgid "Write a config file in /etc/myemerge/myemerge.ini"
 msgstr ""
 
 msgid "Rebuild the whole Gentoo system"
+msgstr ""
+
+msgid "Shows ccache statistics"
 msgstr ""
 
 #~ msgid "If changed restart from first python setup.py doc"
