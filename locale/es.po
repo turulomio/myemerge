@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-07 21:32+0200\n"
+"POT-Creation-Date: 2021-11-22 14:03+0100\n"
 "PO-Revision-Date: 2018-10-22 18:51+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -42,11 +42,17 @@ msgstr "El comando 'uninstall' solo funciona en Linux"
 msgid "My method to update my Gentoo System"
 msgstr "Mi método para actualizar mi sistema Gentoo"
 
-msgid "Write a config file in /etc/myemerge/myemerge.ini"
-msgstr "Escribe un fichero de configuración en /etc/myemerge/myemerge.ini"
-
 msgid "Rebuild the whole Gentoo system"
 msgstr "Recompila el sistema Gentoo completo"
 
 msgid "Shows ccache statistics"
 msgstr "Muestra las estadísticas de ccache"
+
+msgid "Do not make emerge --sync"
+msgstr ""
+
+msgid "Do not clean innecesary packages after compilation"
+msgstr ""
+
+#~ msgid "Write a config file in /etc/myemerge/myemerge.ini"
+#~ msgstr "Escribe un fichero de configuración en /etc/myemerge/myemerge.ini"

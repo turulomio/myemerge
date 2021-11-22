@@ -10,8 +10,8 @@ def main():
     parser.add_argument('--version', action='version', version="{} ({})".format(__version__, __versiondate__))
     parser.add_argument('--rebuild', help=_("Rebuild the whole Gentoo system"),  action='store_true',  default=False)
     parser.add_argument('--ccache_stats', help=_("Shows ccache statistics"),  action='store_true',  default=False)
-    parser.add_argument('--nosync', help=_("Do note makes emerge --sync"),  action='store_true',  default=False)
-    parser.add_argument('--noclean', help=_("Do note cleans innecesary packages after compilation"),  action='store_true',  default=False)
+    parser.add_argument('--nosync', help=_("Do not make emerge --sync"),  action='store_true',  default=False)
+    parser.add_argument('--noclean', help=_("Do not clean innecesary packages after compilation"),  action='store_true',  default=False)
 
     args=parser.parse_args()
 

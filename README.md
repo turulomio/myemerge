@@ -10,6 +10,10 @@ To see statistics with `myemerge --ccache_stats` you must set in /etc/portage/ma
 
 # Changelog
 
+## 0.6.0 (2021-11-22)
+- Added --nosync and --noclean parameters
+- Removed config code. Added CCACHE_DIR to all script to use it one needed.
+
 ## 0.5.0
 - You can use portage ccache statistics.
 

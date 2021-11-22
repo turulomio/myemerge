@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-07 21:36+0200\n"
+"POT-Creation-Date: 2021-11-22 14:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,14 @@ msgstr ""
 msgid "My method to update my Gentoo System"
 msgstr ""
 
-msgid "Write a config file in /etc/myemerge/myemerge.ini"
-msgstr ""
-
 msgid "Rebuild the whole Gentoo system"
 msgstr ""
 
 msgid "Shows ccache statistics"
+msgstr ""
+
+msgid "Do not make emerge --sync"
+msgstr ""
+
+msgid "Do not clean innecesary packages after compilation"
 msgstr ""
