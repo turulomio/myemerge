@@ -3,10 +3,10 @@
 My emerge recomends the use of ccache.
 
 To see statistics with `myemerge --ccache_stats` you must set in /etc/portage/make.conf the following lines:
-
-`CCACHE_DIR="/var/cache/ccache"`
-`FEATURES="ccache"`
-
+```bash
+  CCACHE_DIR="/var/cache/ccache"
+  FEATURES="ccache"
+```
 
 # Changelog
 
