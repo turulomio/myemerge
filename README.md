@@ -1,3 +1,5 @@
+# MyEmerge [![Github - Downloads](https://shields.io/github/downloads/turulomio/myemerge/total?label=Github%20downloads )](https://github.com/turulomio/myemerge/)
+
 # Configuration
 
 My emerge recomends the use of ccache.
