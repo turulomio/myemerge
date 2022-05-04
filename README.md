@@ -12,6 +12,9 @@ To see statistics with `myemerge --ccache_stats` you must set in /etc/portage/ma
 
 # Changelog
 
+## 0.7.0 (2022-05-04)
+- Set again max_cpu_frequency option in config
+
 ## 0.6.0 (2021-11-22)
 - Added --nosync and --noclean parameters
 - Removed config code. Added CCACHE_DIR to all script to use it one needed.
