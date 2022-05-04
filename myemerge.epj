@@ -2,7 +2,7 @@
   "header": {
     "comment": "eric project file for project myemerge",
     "copyright": "Copyright (C) 2022 , ",
-    "saved": "2022-05-04, 06:19:01"
+    "saved": "2022-05-04, 07:20:59"
   },
   "project": {
     "AUTHOR": "",
@@ -51,7 +51,8 @@
     "MIXEDLANGUAGE": false,
     "OTHERS": [
       "LICENSE.txt",
-      "README.md"
+      "README.md",
+      "myemerge.epj"
     ],
     "OTHERTOOLSPARMS": {},
     "PACKAGERSPARMS": {},
@@ -68,12 +69,12 @@
     "RESOURCES": [],
     "SOURCES": [
       "myemerge/__init__.py",
-      "myemerge/cpupower.py",
       "myemerge/gettext.py",
-      "myemerge/github.py",
-      "myemerge/myconfigparser.py",
       "myemerge/myemerge_sync.py",
       "myemerge/objects/command.py",
+      "myemerge/reusing/cpupower.py",
+      "myemerge/reusing/github.py",
+      "myemerge/reusing/myconfigparser.py",
       "myemerge/version.py",
       "setup.py"
     ],
