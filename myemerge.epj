@@ -1,8 +1,8 @@
 {
   "header": {
     "comment": "eric project file for project myemerge",
-    "copyright": "Copyright (C) 2021 , ",
-    "saved": "2021-11-22, 12:11:50"
+    "copyright": "Copyright (C) 2022 , ",
+    "saved": "2022-05-04, 06:19:01"
   },
   "project": {
     "AUTHOR": "",
@@ -50,8 +50,8 @@
     },
     "MIXEDLANGUAGE": false,
     "OTHERS": [
-      "README.md",
-      "LICENSE.txt"
+      "LICENSE.txt",
+      "README.md"
     ],
     "OTHERTOOLSPARMS": {},
     "PACKAGERSPARMS": {},
@@ -67,16 +67,15 @@
     },
     "RESOURCES": [],
     "SOURCES": [
-      "setup.py",
       "myemerge/__init__.py",
-      "myemerge/myemerge_sync.py",
-      "myemerge/myconfigparser.py",
-      "myemerge/gettext.py",
-      "myemerge/objects/command.py",
-      "myemerge/github.py",
       "myemerge/cpupower.py",
+      "myemerge/gettext.py",
+      "myemerge/github.py",
+      "myemerge/myconfigparser.py",
+      "myemerge/myemerge_sync.py",
+      "myemerge/objects/command.py",
       "myemerge/version.py",
-      "__init__.py"
+      "setup.py"
     ],
     "SPELLEXCLUDES": "",
     "SPELLLANGUAGE": "en_US",

@@ -11,3 +11,8 @@ cur/
 tmp/
 __pycache__/
 *.DS_Store
+build/
+dist/
+myemerge.egg-info/
+.eric7project/
+.jedi/

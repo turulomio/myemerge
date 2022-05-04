@@ -67,21 +67,36 @@ class Doc(Command):
 
 class Reusing(Command):
     description = "Download modules from https://github.com/turulomio/reusingcode/"
-    user_options = []
+    user_options = [
+      # The format is (long option, short option, description).
+      ( 'local', None, 'Update files without internet'),
+  ]
 
     def initialize_options(self):
-        pass
+        self.local=False
+
 
     def finalize_options(self):
         pass
 
     def run(self):
         from sys import path
-        path.append("myemerge")
+        path.append("myemerge/reusing")
         from github import download_from_github
-        download_from_github('turulomio','reusingcode','python/github.py', 'myemerge')
-        download_from_github('turulomio','reusingcode','python/cpupower.py', 'myemerge')
-        download_from_github('turulomio','reusingcode','python/myconfigparser.py', 'myemerge')
+        if self.local is False:
+            download_from_github('turulomio','reusingcode','python/casts.py', 'myemerge/reusing')
+            download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing')
+            download_from_github('turulomio','reusingcode','python/cpupower.py', 'myemerge/reusing')
+            download_from_github('turulomio','reusingcode','python/datetime_functions.py', 'myemerge/reusing')
+            download_from_github('turulomio','reusingcode','python/myconfigparser.py', 'myemerge/reusing')
+            download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing/')
+            download_from_github('turulomio','reusingcode','python/file_functions.py', 'myemerge/reusing/')
+            download_from_github('turulomio','reusingcode','python/percentage.py', 'myemerge/reusing/')
+            download_from_github('turulomio','reusingcode','python/currency.py', 'myemerge/reusing/')
+        
+        from file_functions import replace_in_file
+        replace_in_file("myemerge/reusing/casts.py","from currency","from myemerge.reusing.currency")
+        replace_in_file("myemerge/reusing/casts.py","from percentage","from myemerge.reusing.percentage")
 
     ########################################################################
 
