@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "myemerge"
+version = "0.7.0"
+description = "My emerge sync procedure"
+authors = ["turulomio <turulomio@yahoo.es>"]
+license = "GPL-3.0 license"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pycryptodome = "^3.17"
+pytz = "^2023.3"
+colorama = "^0.4.6"
+
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.4.2"
+poethepoet = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+myemerge = 'myemerge.myemerge_sync:main'
+
+
+[tool.poe.tasks]
+translate = { script = "myemerge.poethepoet:translate" }
+release = { script = "myemerge.poethepoet:release" }
+reusing = { script = "myemerge.poethepoet:reusing" }
+
+[project.urls]
+homepage = "https://github.com/turulomio/myemerge/"
+repository = "https://github.com/turulomio/myemerge/"
+changelog = "https://github.com/turulomio/myemerge#changelog"

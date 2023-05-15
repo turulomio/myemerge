@@ -16,3 +16,5 @@ dist/
 myemerge.egg-info/
 .eric7project/
 .jedi/
+.python3.11
+poetry.lock
