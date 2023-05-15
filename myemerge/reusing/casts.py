@@ -263,14 +263,14 @@ def value2object(value, stringtypes):
         return value
     elif stringtypes in ["EUR", "USD"]:
         try:
-            from myemerge.reusing.currency import Currency
+            from currency import Currency
             return Currency(value, "EUR")
         except ImportError:
             raise NotImplementedError("You need https://github.com/turulomio/reusingcode/python/currency.py to use this function.")   
         
     elif stringtypes=="Percentage":       
         try:
-            from myemerge.reusing.percentage import Percentage
+            from percentage import Percentage
             return Percentage(value, 1)
         except ImportError:
             raise NotImplementedError("You need https://github.com/turulomio/reusingcode/python/currency.py to use this function.")   

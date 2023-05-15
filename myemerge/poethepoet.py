@@ -1,7 +1,7 @@
 from myemerge import __version__
 from os import system
 from myemerge.reusing.github import download_from_github
-#from myemerge.reusing.file_functions import replace_in_file
+from myemerge.reusing.file_functions import replace_in_file
 from myemerge.gettext import _
 from sys import argv
 
@@ -46,4 +46,6 @@ def reusing():
         download_from_github('turulomio','reusingcode','python/myconfigparser.py', 'myemerge/reusing')
         download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing/')
         download_from_github('turulomio','reusingcode','python/file_functions.py', 'myemerge/reusing/')
+        
+    replace_in_file("myemerge/reusing/myconfigparser.py",  "from casts",  "from .casts")
 
