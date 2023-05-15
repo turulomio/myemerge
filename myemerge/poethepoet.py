@@ -48,4 +48,5 @@ def reusing():
         download_from_github('turulomio','reusingcode','python/file_functions.py', 'myemerge/reusing/')
         
     replace_in_file("myemerge/reusing/myconfigparser.py",  "from casts",  "from .casts")
+    replace_in_file("myemerge/reusing/myconfigparser.py",  "from datetime_functions",  "from .datetime_functions")
 

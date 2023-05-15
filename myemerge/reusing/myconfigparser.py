@@ -7,7 +7,7 @@ from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 
 from .casts import str2bool, string2list_of_integers, string2list_of_strings, list2string
-from datetime_functions import string2dtnaive
+from .datetime_functions import string2dtnaive
 from base64 import b64encode, b64decode
 from configparser import ConfigParser
 from datetime import datetime
