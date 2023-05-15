@@ -3,7 +3,7 @@ from myemerge.gettext import _
 from myemerge.objects.command import command
 from myemerge.reusing.cpupower import sys_set_cpu_max_scaling_freq, sys_get_cpu_max_freq, sys_get_cpu_max_scaling_freq, is_cpufreq_configured
 from myemerge.reusing.myconfigparser import MyConfigParser
-from myemerge.version import __version__, __versiondate__
+from myemerge import __version__, __versiondate__
 from os import environ, system, path
 from shutil import which
 from sys import exit
