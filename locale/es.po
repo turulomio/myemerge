@@ -55,7 +55,7 @@ msgid "Do not make emerge --sync"
 msgstr "No ejecuta emerge --sync"
 
 msgid "Do not clean innecesary packages after compilation"
-msgstr ""
+msgstr "No limpia paquetes innecesarios después de la compilación"
 
 msgid "You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help."
 msgstr ""
