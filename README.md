@@ -12,6 +12,10 @@ To see statistics with `myemerge --ccache_stats` you must set in /etc/portage/ma
 
 # Changelog
 
+## 0.9.0 (2024-06-18)
+- Improving package
+- Updated dependencies
+
 ## 0.8.0 (2023-05-15)
 - Migrated to pyproject.toml
 - Fixed bugs with cpupower module
