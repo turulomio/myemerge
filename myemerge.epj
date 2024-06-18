@@ -1,8 +1,8 @@
 {
   "header": {
     "comment": "eric project file for project myemerge",
-    "copyright": "Copyright (C) 2022 , ",
-    "saved": "2022-05-04, 07:20:59"
+    "copyright": "Copyright (C) 2024 , ",
+    "saved": "2024-06-18, 07:16:20"
   },
   "project": {
     "AUTHOR": "",
@@ -11,6 +11,7 @@
     "DOCSTRING": "",
     "DOCUMENTATIONPARMS": {},
     "EMAIL": "",
+    "EMBEDDED_VENV": false,
     "EOL": 0,
     "FILETYPES": {
       "*.e4p": "OTHERS",
@@ -39,6 +40,7 @@
     },
     "INTERFACES": [],
     "LEXERASSOCS": {},
+    "LICENSE": "",
     "MAINSCRIPT": "",
     "MAKEPARAMS": {
       "MakeEnabled": false,
@@ -69,22 +71,27 @@
     "RESOURCES": [],
     "SOURCES": [
       "myemerge/__init__.py",
+      "myemerge/commons.py",
       "myemerge/gettext.py",
       "myemerge/myemerge_sync.py",
-      "myemerge/objects/command.py",
+      "myemerge/poethepoet.py",
+      "myemerge/reusing/casts.py",
       "myemerge/reusing/cpupower.py",
+      "myemerge/reusing/datetime_functions.py",
+      "myemerge/reusing/file_functions.py",
       "myemerge/reusing/github.py",
-      "myemerge/reusing/myconfigparser.py",
-      "myemerge/version.py",
-      "setup.py"
+      "myemerge/reusing/myconfigparser.py"
     ],
+    "SOURCESDIR": "",
     "SPELLEXCLUDES": "",
     "SPELLLANGUAGE": "en_US",
     "SPELLWORDS": "",
+    "TESTING_FRAMEWORK": "",
     "TRANSLATIONEXCEPTIONS": [],
     "TRANSLATIONPATTERN": "",
     "TRANSLATIONS": [],
     "TRANSLATIONSBINPATH": "",
+    "TRANSLATIONSOURCESTARTPATH": "",
     "UICPARAMS": {
       "Package": "",
       "PackagesRoot": "",
