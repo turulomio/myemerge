@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: RecPermissions\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 06:43+0200\n"
+"POT-Creation-Date: 2024-06-18 06:59+0200\n"
 "PO-Revision-Date: 2018-11-03 07:11+0100\n"
 "Last-Translator: root <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -17,31 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "New Release:"
-msgstr "Nouvelle sortie :"
-
-msgid "  * Change version and date in version.py"
-msgstr " * Changer la version et la date dans version.py"
-
-msgid "  * Edit Changelog in README"
-msgstr " * Editer le Changelog dans le README"
-
-msgid "  * Make a new tag in github"
-msgstr " * Faire un nouveau tag dans GitHub"
-
-msgid "  * Create a new gentoo ebuild with the new version"
-msgstr " * Créer un nouveau ebuild Gentoo avec la nouvelle version"
-
-msgid "  * Upload to portage repository"
-msgstr " * Uploader au dépôt de portage"
-
-msgid "Uninstall command only works in Linux"
-msgstr "La commande 'désinstaller' marche seulement sur Linux"
-
-msgid "My method to update my Gentoo System"
+msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
 msgstr ""
 
-msgid "Write a config file in /etc/myemerge/myemerge.ini"
+msgid "ccache command wasn't found in your system."
+msgstr ""
+
+#, python-brace-format
+msgid "Your '{0}' config file has been created. You can change your settings editing it."
+msgstr ""
+
+msgid "My method to update my Gentoo System"
 msgstr ""
 
 msgid "Rebuild the whole Gentoo system"
@@ -56,12 +42,36 @@ msgstr ""
 msgid "Do not clean innecesary packages after compilation"
 msgstr ""
 
-msgid "You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help."
-msgstr ""
-
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
 msgstr ""
+
+msgid "New Release:"
+msgstr "Nouvelle sortie :"
+
+msgid "  * Change version and date in __init__.py"
+msgstr ""
+
+msgid "  * Change version in pyproject.toml"
+msgstr ""
+
+msgid "  * Edit Changelog in README"
+msgstr " * Editer le Changelog dans le README"
+
+msgid "  * Make a new tag in github"
+msgstr " * Faire un nouveau tag dans GitHub"
+
+msgid "  * Create a new gentoo ebuild with the new version"
+msgstr " * Créer un nouveau ebuild Gentoo avec la nouvelle version"
+
+msgid "  * Upload to portage repository"
+msgstr " * Uploader au dépôt de portage"
+
+#~ msgid "  * Change version and date in version.py"
+#~ msgstr " * Changer la version et la date dans version.py"
+
+#~ msgid "Uninstall command only works in Linux"
+#~ msgstr "La commande 'désinstaller' marche seulement sur Linux"
 
 #~ msgid "If changed restart from first python setup.py doc"
 #~ msgstr "S'il y a eu modification, recommencer depuis le premier document python setup.py"

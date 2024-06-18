@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-04 06:44+0200\n"
+"POT-Creation-Date: 2024-06-18 06:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,31 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "New Release:"
+msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
 msgstr ""
 
-msgid "  * Change version and date in version.py"
+msgid "ccache command wasn't found in your system."
 msgstr ""
 
-msgid "  * Edit Changelog in README"
-msgstr ""
-
-msgid "  * Make a new tag in github"
-msgstr ""
-
-msgid "  * Create a new gentoo ebuild with the new version"
-msgstr ""
-
-msgid "  * Upload to portage repository"
-msgstr ""
-
-msgid "Uninstall command only works in Linux"
+#, python-brace-format
+msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr ""
 
 msgid "My method to update my Gentoo System"
-msgstr ""
-
-msgid "Write a config file in /etc/myemerge/myemerge.ini"
 msgstr ""
 
 msgid "Rebuild the whole Gentoo system"
@@ -56,9 +42,27 @@ msgstr ""
 msgid "Do not clean innecesary packages after compilation"
 msgstr ""
 
-msgid "You must set your settings in /etc/myemerge/myemerge.ini. Use man myemerge for help."
-msgstr ""
-
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
+msgstr ""
+
+msgid "New Release:"
+msgstr ""
+
+msgid "  * Change version and date in __init__.py"
+msgstr ""
+
+msgid "  * Change version in pyproject.toml"
+msgstr ""
+
+msgid "  * Edit Changelog in README"
+msgstr ""
+
+msgid "  * Make a new tag in github"
+msgstr ""
+
+msgid "  * Create a new gentoo ebuild with the new version"
+msgstr ""
+
+msgid "  * Upload to portage repository"
 msgstr ""
