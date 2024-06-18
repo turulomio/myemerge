@@ -1,8 +1,8 @@
 {
   "header": {
     "comment": "eric project file for project myemerge",
-    "copyright": "Copyright (C) 2023 , ",
-    "saved": "2023-05-15, 10:00:37"
+    "copyright": "Copyright (C) 2024 , ",
+    "saved": "2024-06-18, 07:00:18"
   },
   "project": {
     "AUTHOR": "",
@@ -77,15 +77,12 @@
       "myemerge/poethepoet.py",
       "myemerge/reusing/casts.py",
       "myemerge/reusing/cpupower.py",
-      "myemerge/reusing/currency.py",
       "myemerge/reusing/datetime_functions.py",
       "myemerge/reusing/file_functions.py",
       "myemerge/reusing/github.py",
-      "myemerge/reusing/myconfigparser.py",
-      "myemerge/reusing/percentage.py",
-      "myemerge/version.py",
-      "setup.py"
+      "myemerge/reusing/myconfigparser.py"
     ],
+    "SOURCESDIR": "",
     "SPELLEXCLUDES": "",
     "SPELLLANGUAGE": "en_US",
     "SPELLWORDS": "",
