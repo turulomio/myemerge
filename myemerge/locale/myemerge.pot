@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 06:59+0200\n"
+"POT-Creation-Date: 2024-06-18 07:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,25 +44,4 @@ msgstr ""
 
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
-msgstr ""
-
-msgid "New Release:"
-msgstr ""
-
-msgid "  * Change version and date in __init__.py"
-msgstr ""
-
-msgid "  * Change version in pyproject.toml"
-msgstr ""
-
-msgid "  * Edit Changelog in README"
-msgstr ""
-
-msgid "  * Make a new tag in github"
-msgstr ""
-
-msgid "  * Create a new gentoo ebuild with the new version"
-msgstr ""
-
-msgid "  * Upload to portage repository"
 msgstr ""

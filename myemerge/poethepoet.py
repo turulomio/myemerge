@@ -6,21 +6,30 @@ from sys import argv
 
 
 def release():
-    print(_("New Release:"))
-    print(_("  * Change version and date in __init__.py"))
-    print(_("  * Change version in pyproject.toml"))
-    print(_("  * Edit Changelog in README"))
-    print("  * poe translate")
-    print("  * mcedit myemerge/locale/es.po")
-    print("  * poe translate")
-    print("  * git commit -a -m 'myemerge-{}'".format(__version__))
-    print("  * git push")
-    print(_("  * Make a new tag in github"))
-    print(_("  * Create a new gentoo ebuild with the new version"))
-    print(_("  * Upload to portage repository")) 
+    print("""Nueva versión:
+  * Cambiar la version en pyproject.toml
+  * Cambiar la versión y la fecha en __init__.py
+  * Ejecutar otra vez poe release
+  * git checkout -b myemerge-{0}
+  * Modificar el Changelog README.md
+  * poe translate
+  * mcedit myemerge/locale/es.po
+  * poe translate
+  * git commit -a -m 'myemerge-{0}'
+  * git push
+  * Hacer un pull request con los cambios a master
+  * Hacer un nuevo tag en GitHub
+  * git checkout master
+  * git pull
+  * poetry build
+  * poetry publish
+  * Crea un nuevo ebuild de pydicts en Gentoo con la nueva versión
+  * Subelo al repositorio myportage
+""".format(__version__))
+
 
 def translate():
-        system("xgettext -L Python --no-wrap --no-location --from-code='UTF-8' -o myemerge/locale/myemerge.pot myemerge/*.py myemerge/objects/*.py")
+        system("xgettext -L Python --no-wrap --no-location --from-code='UTF-8' -o myemerge/locale/myemerge.pot myemerge/*.py")
         system("msgmerge -N --no-wrap -U myemerge/locale/es.po myemerge/locale/myemerge.pot")
         system("msgmerge -N --no-wrap -U myemerge/locale/fr.po myemerge/locale/myemerge.pot")
         system("msgfmt -cv -o myemerge/locale/es/LC_MESSAGES/myemerge.mo myemerge/locale/es.po")
