@@ -1,9 +1,9 @@
 from gettext import translation
-from pkg_resources import resource_filename
+from importlib.resources import files
 
 def _(s):
     try:
-        t=translation('myemerge', resource_filename("myemerge","locale"))
+        t=translation('myemerge', files("myemerge")/"locale")
         return t.gettext(s)
     except:
         return s

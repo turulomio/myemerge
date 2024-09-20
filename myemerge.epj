@@ -2,7 +2,7 @@
   "header": {
     "comment": "eric project file for project myemerge",
     "copyright": "Copyright (C) 2024 , ",
-    "saved": "2024-06-18, 07:16:20"
+    "saved": "2024-09-20, 21:31:00"
   },
   "project": {
     "AUTHOR": "",
@@ -75,10 +75,7 @@
       "myemerge/gettext.py",
       "myemerge/myemerge_sync.py",
       "myemerge/poethepoet.py",
-      "myemerge/reusing/casts.py",
       "myemerge/reusing/cpupower.py",
-      "myemerge/reusing/datetime_functions.py",
-      "myemerge/reusing/file_functions.py",
       "myemerge/reusing/github.py",
       "myemerge/reusing/myconfigparser.py"
     ],
