@@ -26,7 +26,7 @@ msgstr "El comando ccache no se ha encontrado en tu sistema."
 
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
-msgstr ""
+msgstr "Tu fichero de configuración '{0}' ha sido creado. Puedes cambiar tus preferencias editándolo."
 
 msgid "My method to update my Gentoo System"
 msgstr "Mi método para actualizar mi sistema Gentoo"
