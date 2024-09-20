@@ -1,7 +1,6 @@
 from myemerge import __version__
 from os import system
 from myemerge.reusing.github import download_from_github
-from myemerge.gettext import _
 from sys import argv
 
 
@@ -49,6 +48,4 @@ def reusing():
         download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing')
         download_from_github('turulomio','reusingcode','python/cpupower.py', 'myemerge/reusing')
         download_from_github('turulomio','reusingcode','python/myconfigparser.py', 'myemerge/reusing')
-        download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing/')
-        download_from_github('turulomio','reusingcode','python/file_functions.py', 'myemerge/reusing/')
 
