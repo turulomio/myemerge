@@ -12,6 +12,9 @@ To see statistics with `myemerge --ccache_stats` you must set in /etc/portage/ma
 
 ## Changelog
 
+### 1.0.0 (2025-04-13)
+- Migrated to poetry>2.0.0
+
 ### 0.10.0 (2024-09-20)
 - Fixed problem with pytz dependency
 - Updated dependencies

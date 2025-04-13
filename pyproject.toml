@@ -1,6 +1,6 @@
 [project]
 name = "myemerge"
-version = "0.10.0"
+version = "1.0.0"
 description = "My emerge sync procedure"
 authors = [
     {name = "turulomio",email = "turulomio@yahoo.es"}

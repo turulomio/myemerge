@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
-msgstr ""
+msgstr "El comando 'cpupower' no se encontró en tu sistema. No será capaz de gestionar las frecuencias de la CPU. Tenga cuidado con la temperatura de su sistema"
 
 msgid "ccache command wasn't found in your system."
 msgstr "El comando ccache no se ha encontrado en tu sistema."
