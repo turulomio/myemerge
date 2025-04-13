@@ -6,10 +6,10 @@ from sys import argv
 
 def release():
     print("""Nueva versión:
+  * Crear un nuevo issue en github con el nombre myemerge-NUEVAVERSION
+  * Copiar el codigo de github para cambiar de versión y pegarlo en la consola
   * Cambiar la version en pyproject.toml
   * Cambiar la versión y la fecha en __init__.py
-  * Ejecutar otra vez poe release
-  * git checkout -b myemerge-{0}
   * Modificar el Changelog README.md
   * poe translate
   * mcedit myemerge/locale/es.po
@@ -22,7 +22,7 @@ def release():
   * git pull
   * poetry build
   * poetry publish
-  * Crea un nuevo ebuild de pydicts en Gentoo con la nueva versión
+  * Crea un nuevo ebuild en Gentoo con la nueva versión
   * Subelo al repositorio myportage
 """.format(__version__))
 
