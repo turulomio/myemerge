@@ -1,7 +1,7 @@
 [project]
 name = "myemerge"
-version = "1.0.0"
-description = "My emerge sync procedure"
+version = "1.1.0"
+description = "My emerge --sync procedure"
 authors = [
     {name = "turulomio",email = "turulomio@yahoo.es"}
 ]
@@ -30,7 +30,6 @@ changelog = "https://github.com/turulomio/myemerge#changelog"
 
 [tool.poetry.scripts]
 myemerge = 'myemerge.myemerge_sync:main'
-
 
 [tool.poe.tasks]
 translate = { script = "myemerge.poethepoet:translate" }
