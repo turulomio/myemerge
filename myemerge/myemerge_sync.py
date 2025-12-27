@@ -2,7 +2,7 @@ from argparse import ArgumentParser
 from myemerge.gettext import _
 from myemerge.commons import command
 from myemerge.reusing.cpupower import sys_set_cpu_max_scaling_freq, sys_get_cpu_max_freq, sys_get_cpu_max_scaling_freq, is_cpufreq_configured
-from myemerge.reusing.myconfigparser import MyConfigParser
+from configparser_rb.core  import ConfigParserRB
 from myemerge import __version__, __versiondate__
 from os import environ, system, path
 from shutil import which
@@ -26,7 +26,7 @@ def load_config():
         If file is not found creates a new one. Returns a config object
     """
     filename='/etc/myemerge/myemerge.ini'
-    config=MyConfigParser(filename)
+    config=ConfigParserRB(filename)
     config.get('cpupower','cpu_hz',  sys_get_cpu_max_freq())
         
     if path.exists(filename) is False: #Writes a config file
