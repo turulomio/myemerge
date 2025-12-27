@@ -47,5 +47,4 @@ def reusing():
     if local is False:
         download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing')
         download_from_github('turulomio','reusingcode','python/cpupower.py', 'myemerge/reusing')
-        download_from_github('turulomio','reusingcode','python/myconfigparser.py', 'myemerge/reusing')
 
