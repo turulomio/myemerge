@@ -1,3 +1,3 @@
 from datetime import date
-__versiondate__ = date(2025, 4, 13)
-__version__ = '1.0.0'
+__versiondate__ = date(2025, 12, 27)
+__version__ = '1.1.0'
