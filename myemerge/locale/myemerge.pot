@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 11:34+0100\n"
+"POT-Creation-Date: 2026-10-31 11:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,15 @@ msgid "Your '{0}' config file has been created. You can change your settings edi
 msgstr ""
 
 #, python-brace-format
+msgid "Permission denied: cannot create '{0}'. myemerge requires root privileges to save configuration."
+msgstr ""
+
+#, python-brace-format
 msgid "Your '{0}' config file has been updated with new options."
+msgstr ""
+
+#, python-brace-format
+msgid "Permission denied: cannot update '{0}'. Run as root to save new default options."
 msgstr ""
 
 #, python-brace-format
@@ -56,4 +64,7 @@ msgstr ""
 
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
+msgstr ""
+
+msgid "Execution failed. myemerge requires root privileges to manage packages and CPU settings."
 msgstr ""
