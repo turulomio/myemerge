@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 08:13+0100\n"
+"POT-Creation-Date: 2026-10-31 11:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
-msgstr ""
-
-msgid "ccache command wasn't found in your system."
+#, python-brace-format
+msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr ""
 
 #, python-brace-format
-msgid "Your '{0}' config file has been created. You can change your settings editing it."
+msgid "Your '{0}' config file has been updated with new options."
+msgstr ""
+
+#, python-brace-format
+msgid "Warning: '{0}' is writable by group or others ({1:o})."
+msgstr ""
+
+#, python-brace-format
+msgid "Warning: '{0}' is not owned by root."
+msgstr ""
+
+msgid "ccache command wasn't found in your system."
 msgstr ""
 
 msgid "My method to update my Gentoo System"
@@ -40,6 +49,9 @@ msgid "Do not make emerge --sync"
 msgstr ""
 
 msgid "Do not clean innecesary packages after compilation"
+msgstr ""
+
+msgid "ccache is disabled in your configuration."
 msgstr ""
 
 #, python-brace-format

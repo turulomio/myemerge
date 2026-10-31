@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 08:11+0100\n"
+"POT-Creation-Date: 2026-10-31 11:34+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: Turulomio <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -17,15 +17,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
-msgstr "La commande 'cpupower' est introuvable sur votre système. Vous ne pourrez pas gérer les fréquences du processeur. Faites attention à la température de votre système"
-
-msgid "ccache command wasn't found in your system."
-msgstr "La commande 'ccache' est introuvable sur votre système."
-
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr "Votre fichier de configuration '{0}' a été créé. Vous pouvez modifier vos paramètres en l'éditant."
+
+#, python-brace-format
+msgid "Your '{0}' config file has been updated with new options."
+msgstr "Votre fichier de configuration '{0}' a été mis à jour avec de nouvelles options."
+
+#, python-brace-format
+msgid "Warning: '{0}' is writable by group or others ({1:o})."
+msgstr "Avertissement : '{0}' est modifiable par le groupe ou d'autres ({1:o})."
+
+#, python-brace-format
+msgid "Warning: '{0}' is not owned by root."
+msgstr "Avertissement : '{0}' n'appartient pas à root."
+
+msgid "ccache command wasn't found in your system."
+msgstr "La commande 'ccache' est introuvable sur votre système."
 
 msgid "My method to update my Gentoo System"
 msgstr "Ma méthode pour mettre à jour mon système Gentoo"
@@ -42,8 +51,12 @@ msgstr "Ne pas exécuter emerge --sync"
 msgid "Do not clean innecesary packages after compilation"
 msgstr "Ne pas nettoyer les paquets inutiles après la compilation"
 
+msgid "ccache is disabled in your configuration."
+msgstr "ccache est désactivé dans votre configuration."
+
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
 msgstr "Fréquence des processeurs définie à {0}"
 
-
+#~ msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
+#~ msgstr "La commande 'cpupower' est introuvable sur votre système. Vous ne pourrez pas gérer les fréquences du processeur. Faites attention à la température de votre système"

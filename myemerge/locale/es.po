@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 08:11+0100\n"
+"POT-Creation-Date: 2026-10-31 11:34+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: turulomio <turulomio@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -18,15 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
-msgstr "El comando 'cpupower' no se encontró en tu sistema. No será capaz de gestionar las frecuencias de la CPU. Tenga cuidado con la temperatura de su sistema"
-
-msgid "ccache command wasn't found in your system."
-msgstr "El comando ccache no se ha encontrado en tu sistema."
-
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr "Tu fichero de configuración '{0}' ha sido creado. Puedes cambiar tus preferencias editándolo."
+
+#, python-brace-format
+msgid "Your '{0}' config file has been updated with new options."
+msgstr "Tu fichero de configuración '{0}' ha sido actualizado con nuevas opciones."
+
+#, python-brace-format
+msgid "Warning: '{0}' is writable by group or others ({1:o})."
+msgstr "Aviso: '{0}' es modificable por grupo u otros ({1:o})."
+
+#, python-brace-format
+msgid "Warning: '{0}' is not owned by root."
+msgstr "Aviso: '{0}' no pertenece a root."
+
+msgid "ccache command wasn't found in your system."
+msgstr "El comando ccache no se ha encontrado en tu sistema."
 
 msgid "My method to update my Gentoo System"
 msgstr "Mi método para actualizar mi sistema Gentoo"
@@ -43,7 +52,12 @@ msgstr "No ejecuta emerge --sync"
 msgid "Do not clean innecesary packages after compilation"
 msgstr "No limpia paquetes innecesarios después de la compilación"
 
+msgid "ccache is disabled in your configuration."
+msgstr "ccache está desactivado en tu configuración."
+
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
 msgstr "La frequencia de las CPU se ha establecido a {0}"
 
+#~ msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
+#~ msgstr "El comando 'cpupower' no se encontró en tu sistema. No será capaz de gestionar las frecuencias de la CPU. Tenga cuidado con la temperatura de su sistema"

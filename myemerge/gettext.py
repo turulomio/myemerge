@@ -5,5 +5,5 @@ def _(s):
     try:
         t=translation('myemerge', files("myemerge")/"locale")
         return t.gettext(s)
-    except:
+    except Exception:
         return s

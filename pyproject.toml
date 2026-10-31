@@ -10,7 +10,8 @@ readme = "README.md"
 requires-python = ">=3.12,<4.0.0"
 dependencies = [
     "colorama >=0.4.6",
-    "configparser-rb (>=1.1.0)"
+    "configparser-rb (>=1.1.0)",
+    "pycpufreq (>=1.0.0)"
 ]
 
 [tool.poetry]
@@ -34,4 +35,3 @@ myemerge = 'myemerge.myemerge_sync:main'
 [tool.poe.tasks]
 translate = { script = "myemerge.poethepoet:translate" }
 release = { script = "myemerge.poethepoet:release" }
-reusing = { script = "myemerge.poethepoet:reusing" }
