@@ -7,10 +7,10 @@ from sys import argv
 def release():
     print("""Nueva versión:
   * Crear un nuevo issue en github con el nombre myemerge-NUEVAVERSION
-  * Copiar el codigo de github para cambiar de versión y pegarlo en la consola
+  * poe release
   * Cambiar la version en pyproject.toml
   * Cambiar la versión y la fecha en __init__.py
-  * Modificar el Changelog README.md
+  * poe release
   * poe translate
   * mcedit myemerge/locale/es.po
   * poe translate
