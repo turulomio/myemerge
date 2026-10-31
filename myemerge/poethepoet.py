@@ -1,7 +1,5 @@
 from myemerge import __version__
-from os import system
-from myemerge.reusing.github import download_from_github
-from sys import argv
+from subprocess import run
 
 
 def release():
@@ -28,23 +26,9 @@ def release():
 
 
 def translate():
-        system("xgettext -L Python --no-wrap --no-location --from-code='UTF-8' -o myemerge/locale/myemerge.pot myemerge/*.py")
-        system("msgmerge -N --no-wrap -U myemerge/locale/es.po myemerge/locale/myemerge.pot")
-        system("msgmerge -N --no-wrap -U myemerge/locale/fr.po myemerge/locale/myemerge.pot")
-        system("msgfmt -cv -o myemerge/locale/es/LC_MESSAGES/myemerge.mo myemerge/locale/es.po")
-        system("msgfmt -cv -o myemerge/locale/fr/LC_MESSAGES/myemerge.mo myemerge/locale/fr.po")
-
-def reusing():
-    """
-        Actualiza directorio reusing
-        poe reusing
-        poe reusing --local
-    """
-    local=False
-    if len(argv)==2 and argv[1]=="--local":
-        local=True
-        print("Update code in local without downloading was selected with --local")
-    if local is False:
-        download_from_github('turulomio','reusingcode','python/github.py', 'myemerge/reusing')
-        download_from_github('turulomio','reusingcode','python/cpupower.py', 'myemerge/reusing')
+    run("xgettext -L Python --no-wrap --no-location --from-code='UTF-8' -o myemerge/locale/myemerge.pot myemerge/*.py", shell=True, check=True)
+    run(["msgmerge", "-N", "--no-wrap", "-U", "myemerge/locale/es.po", "myemerge/locale/myemerge.pot"], check=True)
+    run(["msgmerge", "-N", "--no-wrap", "-U", "myemerge/locale/fr.po", "myemerge/locale/myemerge.pot"], check=True)
+    run(["msgfmt", "-cv", "-o", "myemerge/locale/es/LC_MESSAGES/myemerge.mo", "myemerge/locale/es.po"], check=True)
+    run(["msgfmt", "-cv", "-o", "myemerge/locale/fr/LC_MESSAGES/myemerge.mo", "myemerge/locale/fr.po"], check=True)
 

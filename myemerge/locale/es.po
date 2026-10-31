@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 08:11+0100\n"
+"POT-Creation-Date: 2026-10-31 11:20+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: turulomio <turulomio@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -28,6 +28,14 @@ msgstr "El comando ccache no se ha encontrado en tu sistema."
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr "Tu fichero de configuración '{0}' ha sido creado. Puedes cambiar tus preferencias editándolo."
 
+#, python-brace-format
+msgid "Warning: '{0}' is writable by group or others ({1:o})."
+msgstr "Aviso: '{0}' es modificable por grupo u otros ({1:o})."
+
+#, python-brace-format
+msgid "Warning: '{0}' is not owned by root."
+msgstr "Aviso: '{0}' no pertenece a root."
+
 msgid "My method to update my Gentoo System"
 msgstr "Mi método para actualizar mi sistema Gentoo"
 
@@ -46,4 +54,3 @@ msgstr "No limpia paquetes innecesarios después de la compilación"
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
 msgstr "La frequencia de las CPU se ha establecido a {0}"
-
