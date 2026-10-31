@@ -25,8 +25,8 @@ cpu_hz = 4600000
 
 [ccache]
 # Boolean flag to enable or disable ccache support (True / False)
-# Defaults to True
-use = True
+# Defaults to False
+use = False
 ```
 
 ### Configuration Options
@@ -34,7 +34,7 @@ use = True
 | Section | Option | Type | Default | Description |
 |---|---|---|---|---|
 | `[cpupower]` | `cpu_hz` | Integer | System Max Freq | Maximum CPU scaling frequency (in Hz) applied while compiling packages. Restores previous frequency upon completion. |
-| `[ccache]` | `use` | Boolean | `True` | When `True`, configures `CCACHE_DIR` and allows viewing cache stats. Set to `False` to disable ccache integration. |
+| `[ccache]` | `use` | Boolean | `False` | When `True`, configures `CCACHE_DIR` and allows viewing cache stats. Set to `False` to disable ccache integration. |
 
 ---
 
