@@ -47,3 +47,4 @@ class Config:
 
 def load_config(filename: Path | str = DEFAULT_CONFIG_PATH) -> Config:
     return Config(filename)
+
