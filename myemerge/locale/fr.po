@@ -1,15 +1,15 @@
-# French translations for PACKAGE package.
-# Copyright (C) 2018 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Turulomio <turulomio@yahoo.es>, 2018.
+# French translations for myemerge package.
+# Copyright (C) 2018-2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the myemerge package.
+# Turulomio <turulomio@yahoo.es>, 2018-2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RecPermissions\n"
+"Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 07:26+0200\n"
-"PO-Revision-Date: 2018-11-03 07:11+0100\n"
-"Last-Translator: root <turulomio@yahoo.es>\n"
+"POT-Creation-Date: 2026-10-31 08:11+0100\n"
+"PO-Revision-Date: 2026-10-31 08:11+0100\n"
+"Last-Translator: Turulomio <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -18,31 +18,32 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
-msgstr ""
+msgstr "La commande 'cpupower' est introuvable sur votre système. Vous ne pourrez pas gérer les fréquences du processeur. Faites attention à la température de votre système"
 
 msgid "ccache command wasn't found in your system."
-msgstr ""
+msgstr "La commande 'ccache' est introuvable sur votre système."
 
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
-msgstr ""
+msgstr "Votre fichier de configuration '{0}' a été créé. Vous pouvez modifier vos paramètres en l'éditant."
 
 msgid "My method to update my Gentoo System"
-msgstr ""
+msgstr "Ma méthode pour mettre à jour mon système Gentoo"
 
 msgid "Rebuild the whole Gentoo system"
-msgstr ""
+msgstr "Reconstruire l'ensemble du système Gentoo"
 
 msgid "Shows ccache statistics"
-msgstr ""
+msgstr "Affiche les statistiques de ccache"
 
 msgid "Do not make emerge --sync"
-msgstr ""
+msgstr "Ne pas exécuter emerge --sync"
 
 msgid "Do not clean innecesary packages after compilation"
-msgstr ""
+msgstr "Ne pas nettoyer les paquets inutiles après la compilation"
 
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
-msgstr ""
+msgstr "Fréquence des processeurs définie à {0}"
+
 
