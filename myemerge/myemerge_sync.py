@@ -3,9 +3,9 @@ from myemerge.gettext import _
 from pycpufreq import sys_set_cpu_max_scaling_freq, sys_get_cpu_max_scaling_freq, is_cpufreq_configured
 from myemerge.config import load_config
 from myemerge import __version__, __versiondate__
-from os import environ
+from os import environ, geteuid
 from shutil import which
-from subprocess import run
+from subprocess import CalledProcessError, run
 from sys import exit
 from colorama import init as colorama_init,  Fore, Style
 
@@ -45,23 +45,29 @@ def main():
     if is_cpufreq_configured():
         cpu_hz_before = sys_get_cpu_max_scaling_freq()
         cpu_hz = config.cpu_hz
-        sys_set_cpu_max_scaling_freq(cpu_hz)
-        print(_("CPUs frequency set to {0}").format(int(cpu_hz)))
+        if sys_set_cpu_max_scaling_freq(cpu_hz):
+            print(_("CPUs frequency set to {0}").format(int(cpu_hz)))
 
-    if args.rebuild:
-        run(["emaint", "cleanresume", "-f"], check=True)
-        run(["emerge", "-ev", "world", "--keep-going", "y"], check=True)
-        run(["emerge", "@preserved-rebuild"], check=True)
-        run(["revdep-rebuild", "-i", "--", "--keep-going", "y"], check=True)
-    else:
-        if not args.nosync:
-            run(["emerge", "--sync"], check=True)
-        run(["emaint", "cleanresume", "-f"], check=True)
-        run(["emerge", "--update", "--newuse", "--deep", "-v", "--keep-going", "y", "@world", "--backtrack=60", "--with-bdeps", "y", "--changed-deps", "y"], check=True)
-        run(["emerge", "-v", "@preserved-rebuild", "--keep-going", "y"], check=True)
-        if not args.noclean:
-            run(["eclean-dist", "-d"], check=True)
+    try:
+        if args.rebuild:
+            run(["emaint", "cleanresume", "-f"], check=True)
+            run(["emerge", "-ev", "world", "--keep-going", "y"], check=True)
+            run(["emerge", "@preserved-rebuild"], check=True)
+            run(["revdep-rebuild", "-i", "--", "--keep-going", "y"], check=True)
+        else:
+            if not args.nosync:
+                run(["emerge", "--sync"], check=True)
+            run(["emaint", "cleanresume", "-f"], check=True)
+            run(["emerge", "--update", "--newuse", "--deep", "-v", "--keep-going", "y", "@world", "--backtrack=60", "--with-bdeps", "y", "--changed-deps", "y"], check=True)
+            run(["emerge", "-v", "@preserved-rebuild", "--keep-going", "y"], check=True)
+            if not args.noclean:
+                run(["eclean-dist", "-d"], check=True)
+    except (CalledProcessError, PermissionError) as e:
+        if geteuid() != 0:
+            print(Style.BRIGHT + Fore.RED + _("Execution failed. myemerge requires root privileges to manage packages and CPU settings.") + Style.RESET_ALL)
+            exit(1)
+        raise e
 
     if is_cpufreq_configured():
-        sys_set_cpu_max_scaling_freq(cpu_hz_before)
-        print(_("CPUs frequency set to {0}").format(int(cpu_hz_before)))
+        if sys_set_cpu_max_scaling_freq(cpu_hz_before):
+            print(_("CPUs frequency set to {0}").format(int(cpu_hz_before)))

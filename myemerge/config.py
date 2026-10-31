@@ -39,15 +39,21 @@ class Config:
             self.parser.get('ccache', 'use')
 
         if not file_existed:
-            self.parser.save()
             try:
-                self.filename.chmod(0o644)
+                self.parser.save()
+                try:
+                    self.filename.chmod(0o644)
+                except OSError:
+                    pass
+                print(Style.BRIGHT + Fore.GREEN + _("Your '{0}' config file has been created. You can change your settings editing it.").format(self.filename) + Style.RESET_ALL)
             except OSError:
-                pass
-            print(Style.BRIGHT + Fore.GREEN + _("Your '{0}' config file has been created. You can change your settings editing it.").format(self.filename) + Style.RESET_ALL)
+                print(Style.BRIGHT + Fore.RED + _("Permission denied: cannot create '{0}'. myemerge requires root privileges to save configuration.").format(self.filename) + Style.RESET_ALL)
         elif updated:
-            self.parser.save()
-            print(Style.BRIGHT + Fore.CYAN + _("Your '{0}' config file has been updated with new options.").format(self.filename) + Style.RESET_ALL)
+            try:
+                self.parser.save()
+                print(Style.BRIGHT + Fore.CYAN + _("Your '{0}' config file has been updated with new options.").format(self.filename) + Style.RESET_ALL)
+            except OSError:
+                print(Style.BRIGHT + Fore.YELLOW + _("Permission denied: cannot update '{0}'. Run as root to save new default options.").format(self.filename) + Style.RESET_ALL)
             self._check_permissions()
         else:
             self._check_permissions()

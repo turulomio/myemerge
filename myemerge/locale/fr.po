@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 11:34+0100\n"
+"POT-Creation-Date: 2026-10-31 11:49+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: Turulomio <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -22,8 +22,16 @@ msgid "Your '{0}' config file has been created. You can change your settings edi
 msgstr "Votre fichier de configuration '{0}' a été créé. Vous pouvez modifier vos paramètres en l'éditant."
 
 #, python-brace-format
+msgid "Permission denied: cannot create '{0}'. myemerge requires root privileges to save configuration."
+msgstr "Permission refusée : impossible de créer '{0}'. myemerge nécessite les privilèges root pour enregistrer la configuration."
+
+#, python-brace-format
 msgid "Your '{0}' config file has been updated with new options."
 msgstr "Votre fichier de configuration '{0}' a été mis à jour avec de nouvelles options."
+
+#, python-brace-format
+msgid "Permission denied: cannot update '{0}'. Run as root to save new default options."
+msgstr "Permission refusée : impossible de mettre à jour '{0}'. Exécutez en tant que root pour enregistrer les nouvelles options par défaut."
 
 #, python-brace-format
 msgid "Warning: '{0}' is writable by group or others ({1:o})."
@@ -57,6 +65,9 @@ msgstr "ccache est désactivé dans votre configuration."
 #, python-brace-format
 msgid "CPUs frequency set to {0}"
 msgstr "Fréquence des processeurs définie à {0}"
+
+msgid "Execution failed. myemerge requires root privileges to manage packages and CPU settings."
+msgstr "L'exécution a échoué. myemerge nécessite les privilèges root pour gérer les paquets et les paramètres du processeur."
 
 #~ msgid "cpupower command wasn't found in your system. You won't be able to manage cpu frequencies. Be carefull with your system temperature"
 #~ msgstr "La commande 'cpupower' est introuvable sur votre système. Vous ne pourrez pas gérer les fréquences du processeur. Faites attention à la température de votre système"
