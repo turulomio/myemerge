@@ -1,3 +1,9 @@
+"""Configuration module for myemerge.
+
+Manages loading, creating, and validating settings stored in
+`/etc/myemerge/myemerge.ini`.
+"""
+
 from pathlib import Path
 from colorama import Fore, Style
 from configparser_rb.core import ConfigParserRB
@@ -8,6 +14,8 @@ DEFAULT_CONFIG_PATH = Path('/etc/myemerge/myemerge.ini')
 
 
 class Config:
+    """Represents the myemerge configuration."""
+
     def __init__(self, filename: Path | str = DEFAULT_CONFIG_PATH):
         self.filename = Path(filename)
         self.parser = ConfigParserRB(str(self.filename))
@@ -43,13 +51,16 @@ class Config:
 
     @property
     def cpu_hz(self) -> int:
+        """Target CPU frequency in Hz applied during emerge execution."""
         return self.parser.getInteger('cpupower', 'cpu_hz')
 
     @property
     def use_ccache(self) -> bool:
+        """Whether ccache support and environment configuration are enabled."""
         return self.parser.getBoolean('ccache', 'use', 'True')
 
 
 def load_config(filename: Path | str = DEFAULT_CONFIG_PATH) -> Config:
+    """Helper function to load a Config instance."""
     return Config(filename)
 
