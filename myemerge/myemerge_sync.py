@@ -17,7 +17,6 @@ def check_app_ccache():
 
 def main():
     colorama_init()
-    has_ccache = check_app_ccache()
     parser = ArgumentParser(description=_("My method to update my Gentoo System"))
     parser.add_argument('--version', action='version', version="{} ({})".format(__version__, __versiondate__))
     parser.add_argument('--rebuild', help=_("Rebuild the whole Gentoo system"),  action='store_true',  default=False)
@@ -29,13 +28,18 @@ def main():
     
     config = load_config()
 
-    environ["CCACHE_DIR"] = "/var/cache/ccache" #CCache path of portage
-    ##ccache is only used if it's set in /etc/portage/make.conf
-    if args.ccache_stats:
-        if has_ccache:
-            run(["ccache", "-s"], check=True)
-        else:
-            print(Style.BRIGHT + Fore.RED + _("ccache command wasn't found in your system.") + Style.RESET_ALL)
+    if config.use_ccache:
+        has_ccache = check_app_ccache()
+        environ["CCACHE_DIR"] = "/var/cache/ccache" #CCache path of portage
+        ##ccache is only used if it's set in /etc/portage/make.conf
+        if args.ccache_stats:
+            if has_ccache:
+                run(["ccache", "-s"], check=True)
+            else:
+                print(Style.BRIGHT + Fore.RED + _("ccache command wasn't found in your system.") + Style.RESET_ALL)
+            exit(0)
+    elif args.ccache_stats:
+        print(Style.BRIGHT + Fore.RED + _("ccache is disabled in your configuration.") + Style.RESET_ALL)
         exit(0)
 
     if is_cpufreq_configured():

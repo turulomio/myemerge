@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 11:26+0100\n"
+"POT-Creation-Date: 2026-10-31 11:29+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: Turulomio <turulomio@yahoo.es>\n"
 "Language-Team: French\n"
@@ -46,6 +46,9 @@ msgstr "Ne pas exécuter emerge --sync"
 
 msgid "Do not clean innecesary packages after compilation"
 msgstr "Ne pas nettoyer les paquets inutiles après la compilation"
+
+msgid "ccache is disabled in your configuration."
+msgstr "ccache est désactivé dans votre configuration."
 
 #, python-brace-format
 msgid "CPUs frequency set to {0}"

@@ -17,6 +17,7 @@ class Config:
         """Loads or creates the configuration file and verifies permissions."""
         # Use existing value in config if present; default to current max freq
         self.parser.get('cpupower', 'cpu_hz', sys_get_cpu_max_freq())
+        self.parser.get('ccache', 'use', 'True')
 
         if not self.filename.exists():
             self.parser.save()
@@ -43,6 +44,10 @@ class Config:
     @property
     def cpu_hz(self) -> int:
         return self.parser.getInteger('cpupower', 'cpu_hz')
+
+    @property
+    def use_ccache(self) -> bool:
+        return self.parser.getBoolean('ccache', 'use', 'True')
 
 
 def load_config(filename: Path | str = DEFAULT_CONFIG_PATH) -> Config:
