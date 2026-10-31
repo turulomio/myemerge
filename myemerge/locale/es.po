@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: myemerge 1.1.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 11:29+0100\n"
+"POT-Creation-Date: 2026-10-31 11:34+0100\n"
 "PO-Revision-Date: 2026-10-31 08:11+0100\n"
 "Last-Translator: turulomio <turulomio@yahoo.es>\n"
 "Language-Team: Spanish\n"
@@ -21,6 +21,10 @@ msgstr ""
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
 msgstr "Tu fichero de configuración '{0}' ha sido creado. Puedes cambiar tus preferencias editándolo."
+
+#, python-brace-format
+msgid "Your '{0}' config file has been updated with new options."
+msgstr "Tu fichero de configuración '{0}' ha sido actualizado con nuevas opciones."
 
 #, python-brace-format
 msgid "Warning: '{0}' is writable by group or others ({1:o})."

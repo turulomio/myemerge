@@ -22,18 +22,33 @@ class Config:
         self._load()
 
     def _load(self):
-        """Loads or creates the configuration file and verifies permissions."""
-        # Use existing value in config if present; default to current max freq
-        self.parser.get('cpupower', 'cpu_hz', sys_get_cpu_max_freq())
-        self.parser.get('ccache', 'use', 'False')
+        """Loads or creates the configuration file, auto-updates missing options, and verifies permissions."""
+        file_existed = self.filename.exists()
+        updated = False
 
-        if not self.filename.exists():
+        if not self.parser.config.has_option('cpupower', 'cpu_hz'):
+            self.parser.get('cpupower', 'cpu_hz', sys_get_cpu_max_freq())
+            updated = True
+        else:
+            self.parser.get('cpupower', 'cpu_hz')
+
+        if not self.parser.config.has_option('ccache', 'use'):
+            self.parser.get('ccache', 'use', 'False')
+            updated = True
+        else:
+            self.parser.get('ccache', 'use')
+
+        if not file_existed:
             self.parser.save()
             try:
                 self.filename.chmod(0o644)
             except OSError:
                 pass
             print(Style.BRIGHT + Fore.GREEN + _("Your '{0}' config file has been created. You can change your settings editing it.").format(self.filename) + Style.RESET_ALL)
+        elif updated:
+            self.parser.save()
+            print(Style.BRIGHT + Fore.CYAN + _("Your '{0}' config file has been updated with new options.").format(self.filename) + Style.RESET_ALL)
+            self._check_permissions()
         else:
             self._check_permissions()
 

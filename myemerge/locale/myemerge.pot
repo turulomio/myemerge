@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-31 11:33+0100\n"
+"POT-Creation-Date: 2026-10-31 11:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,10 @@ msgstr ""
 
 #, python-brace-format
 msgid "Your '{0}' config file has been created. You can change your settings editing it."
+msgstr ""
+
+#, python-brace-format
+msgid "Your '{0}' config file has been updated with new options."
 msgstr ""
 
 #, python-brace-format
